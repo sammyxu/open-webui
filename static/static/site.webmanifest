@@ -1,6 +1,6 @@
 {
-  "name": "Open WebUI",
-  "short_name": "WebUI",
+  "name": "MedIT GPT",
+  "short_name": "MedIT GPT",
   "icons": [
     {
       "src": "/static/web-app-manifest-192x192.png",
