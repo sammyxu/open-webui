@@ -151,7 +151,8 @@
 	}
 
 	$: messageOutput = Array.isArray(message?.data?.output) ? message.data.output : [];
-	$: hasStructuredOutput = buildOutputDisplayItems(messageOutput).length > 0;
+	$: hasStructuredOutput =
+		buildOutputDisplayItems(messageOutput, $settings?.hideProcessingDetails ?? false).length > 0;
 </script>
 
 <ConfirmDialog

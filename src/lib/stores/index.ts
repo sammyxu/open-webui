@@ -229,6 +229,8 @@ type Settings = {
 	voiceInterruption?: boolean;
 	collapseCodeBlocks?: boolean;
 	expandDetails?: boolean;
+	showInlineCitations?: boolean;
+	hideProcessingDetails?: boolean;
 	notificationSound?: boolean;
 	notificationSoundAlways?: boolean;
 	stylizedPdfExport?: boolean;

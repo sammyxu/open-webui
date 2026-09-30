@@ -36,6 +36,7 @@
 	export let open = false;
 	export let grouped = false;
 	export let allowEmbeds = false;
+	export let hideProcessingDetails = false;
 	export let className = '';
 	export let resolvable = false;
 	export let resolving = false;
@@ -177,9 +178,11 @@
 	{#if allowEmbeds && !grouped && embeds && Array.isArray(embeds) && embeds.length > 0}
 		<!-- Embed Mode: Show iframes without collapsible behavior -->
 		<div class="py-1 w-full cursor-pointer">
-			<div class="w-full text-xs text-gray-500">
-				{attributes.name}
-			</div>
+			{#if !hideProcessingDetails}
+				<div class="w-full text-xs text-gray-500">
+					{attributes.name}
+				</div>
+			{/if}
 			{#each embeds as embed, idx}
 				<div class="my-2" id={`${componentId}-tool-call-embed-${idx}`}>
 					<FullHeightIframe
@@ -193,8 +196,8 @@
 				</div>
 			{/each}
 		</div>
-	{:else}
-		<!-- Tool call display -->
+	{:else if !hideProcessingDetails || needsApproval || needsInput}
+		<!-- Tool call display (only calls waiting on the user when processing details are hidden) -->
 		<div
 			class="{buttonClassName} w-full min-w-0 cursor-pointer"
 			role="button"

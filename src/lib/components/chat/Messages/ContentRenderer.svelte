@@ -125,9 +125,13 @@
 		sourceIds = [...new Set(result)];
 	};
 
-	/** @param {string} messageContent */
-	const formatMessageContent = (messageContent) =>
-		model?.info?.meta?.capabilities?.citations == false
+	$: hideInlineCitations =
+		model?.info?.meta?.capabilities?.citations == false ||
+		!($settings?.showInlineCitations ?? true);
+
+	// Reactive so already-rendered messages update when the setting changes
+	$: formatMessageContent = (/** @type {string} */ messageContent) =>
+		hideInlineCitations
 			? replaceOutsideCode(messageContent, (segment) =>
 					segment.replace(/\s*(\[(?:\d+(?:#[^,\]\s]+)?(?:,\s*\d+(?:#[^,\]\s]+)?)*)\])+/g, '')
 				)

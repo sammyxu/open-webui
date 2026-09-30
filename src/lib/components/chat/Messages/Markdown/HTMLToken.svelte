@@ -91,15 +91,17 @@
 		{@const statusTitle = match && match[1]}
 		{@const statusDone = match && match[2] === 'true'}
 		{#if statusTitle}
-			<div class="flex flex-col justify-center -space-y-0.5">
-				<div
-					class="{statusDone === false
-						? 'shimmer'
-						: ''} text-gray-500 dark:text-gray-500 line-clamp-1 text-wrap"
-				>
-					{statusTitle}
+			{#if !($settings?.hideProcessingDetails ?? false)}
+				<div class="flex flex-col justify-center -space-y-0.5">
+					<div
+						class="{statusDone === false
+							? 'shimmer'
+							: ''} text-gray-500 dark:text-gray-500 line-clamp-1 text-wrap"
+					>
+						{statusTitle}
+					</div>
 				</div>
-			</div>
+			{/if}
 		{:else}
 			{token.text}
 		{/if}

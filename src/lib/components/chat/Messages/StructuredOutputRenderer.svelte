@@ -67,7 +67,8 @@
 		compactPreview ? 'text-xs' : 'text-[0.9375rem]'
 	} text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition`;
 
-	$: displayItems = buildOutputDisplayItems(output) as OutputDisplayItem[];
+	$: hideProcessingDetails = $settings?.hideProcessingDetails ?? false;
+	$: displayItems = buildOutputDisplayItems(output, hideProcessingDetails) as OutputDisplayItem[];
 </script>
 
 {#each displayItems as displayItem (displayItem.id)}
@@ -178,6 +179,7 @@
 				attributes={detailToken.attributes}
 				resultContent={detailToken.text}
 				{allowEmbeds}
+				{hideProcessingDetails}
 				resolvable={!!chatId && !!messageId && save}
 				resolving={resolvingCallId === detailToken.attributes?.id}
 				onResolve={(approved) => resolveToolCall(detailToken.attributes?.id ?? '', approved)}

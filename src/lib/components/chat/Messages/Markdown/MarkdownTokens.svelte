@@ -66,7 +66,11 @@
 		return token?.type === 'details' && GROUPABLE_DETAIL_TYPES.has(token?.attributes?.type ?? '');
 	};
 
-	const getDisplayTokens = (tokenList: Token[] = []) => {
+	const isToolCallDetailToken = (token: Token & { attributes?: { type?: string } }) => {
+		return token?.type === 'details' && token?.attributes?.type === 'tool_calls';
+	};
+
+	const getDisplayTokens = (tokenList: Token[] = [], hideProcessingDetails = false) => {
 		const displayTokens = [];
 		let detailGroup = [];
 
@@ -85,7 +89,12 @@
 
 		for (const token of tokenList) {
 			if (isGroupableDetailToken(token)) {
-				detailGroup.push(token);
+				if (!hideProcessingDetails) {
+					detailGroup.push(token);
+				} else if (isToolCallDetailToken(token)) {
+					// Ungrouped, so ToolCallDisplay shows only approvals, embeds and images
+					displayTokens.push(token);
+				}
 			} else {
 				flushDetailGroup();
 				displayTokens.push(token);
@@ -131,7 +140,8 @@
 		compactPreview ? 'text-xs' : 'text-[0.9375rem]'
 	} text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition`;
 
-	$: displayTokens = getDisplayTokens(tokens);
+	$: hideProcessingDetails = $settings?.hideProcessingDetails ?? false;
+	$: displayTokens = getDisplayTokens(tokens, hideProcessingDetails);
 	$: singlePlainBlock =
 		displayTokens.length === 1 &&
 		(displayTokens[0]?.type === 'paragraph' || displayTokens[0]?.type === 'text');
@@ -509,6 +519,7 @@
 				attributes={token.attributes}
 				resultContent={getDetailTextContent(token)}
 				{allowEmbeds}
+				{hideProcessingDetails}
 				resolvable={!!chatId && !!messageId && save}
 				resolving={resolvingCallId === token.attributes?.id}
 				onResolve={(approved) => resolveToolCall(token.attributes?.id ?? '', approved)}

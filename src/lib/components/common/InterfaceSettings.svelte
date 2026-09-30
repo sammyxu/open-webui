@@ -76,6 +76,8 @@
 	let renderMarkdownInUserMessages = true;
 	let renderMarkdownInAssistantMessages = true;
 	let expandDetails = false;
+	let showInlineCitations = true;
+	let hideProcessingDetails = false;
 	let chatHoverPreview = true;
 	let renderMarkdownInPreviews = true;
 	let showChatTitleInTab = true;
@@ -352,6 +354,8 @@
 		renderMarkdownInUserMessages = currentSettings?.renderMarkdownInUserMessages ?? true;
 		renderMarkdownInAssistantMessages = currentSettings?.renderMarkdownInAssistantMessages ?? true;
 		expandDetails = currentSettings?.expandDetails ?? false;
+		showInlineCitations = currentSettings?.showInlineCitations ?? true;
+		hideProcessingDetails = currentSettings?.hideProcessingDetails ?? false;
 		chatHoverPreview = currentSettings?.chatHoverPreview ?? true;
 		renderMarkdownInPreviews = currentSettings?.renderMarkdownInPreviews ?? true;
 
@@ -1325,6 +1329,52 @@
 		</div>
 		<p class={settingDescriptionClass}>
 			{$i18n.t('settings.personal.interface.alwaysExpandDetails.description')}
+		</p>
+	</div>
+
+	<div>
+		<div class={settingRowClass}>
+			<div id="inline-citations-label" class={settingLabelClass}>
+				{$i18n.t('settings.personal.interface.inlineCitations.label')}
+			</div>
+
+			<div class={settingControlClass}>
+				<Switch
+					ariaLabelledbyId="inline-citations-label"
+					tooltip={true}
+					bind:state={showInlineCitations}
+					inherited={isDefaultSetting('showInlineCitations')}
+					on:change={() => {
+						saveSettings({ showInlineCitations });
+					}}
+				/>
+			</div>
+		</div>
+		<p class={settingDescriptionClass}>
+			{$i18n.t('settings.personal.interface.inlineCitations.description')}
+		</p>
+	</div>
+
+	<div>
+		<div class={settingRowClass}>
+			<div id="hide-processing-details-label" class={settingLabelClass}>
+				{$i18n.t('settings.personal.interface.hideProcessingDetails.label')}
+			</div>
+
+			<div class={settingControlClass}>
+				<Switch
+					ariaLabelledbyId="hide-processing-details-label"
+					tooltip={true}
+					bind:state={hideProcessingDetails}
+					inherited={isDefaultSetting('hideProcessingDetails')}
+					on:change={() => {
+						saveSettings({ hideProcessingDetails });
+					}}
+				/>
+			</div>
+		</div>
+		<p class={settingDescriptionClass}>
+			{$i18n.t('settings.personal.interface.hideProcessingDetails.description')}
 		</p>
 	</div>
 

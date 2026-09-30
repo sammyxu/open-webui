@@ -341,7 +341,10 @@ function buildDetailToken(
 	return null;
 }
 
-export function buildOutputDisplayItems(output: OutputItem[] = []): OutputDisplayItem[] {
+export function buildOutputDisplayItems(
+	output: OutputItem[] = [],
+	hideProcessingDetails = false
+): OutputDisplayItem[] {
 	const displayItems: OutputDisplayItem[] = [];
 	const currentDetailTokens: OutputDetailToken[] = [];
 	const toolOutputByCallId: Record<string, OutputItem> = {};
@@ -400,8 +403,11 @@ export function buildOutputDisplayItems(output: OutputItem[] = []): OutputDispla
 
 		if (item.type && GROUPABLE_OUTPUT_TYPES.has(item.type)) {
 			const token = buildDetailToken(item, index === output.length - 1, toolOutputByCallId);
-			if (token) {
+			if (token && !hideProcessingDetails) {
 				currentDetailTokens.push(token);
+			} else if (token?.attributes.type === 'tool_calls') {
+				// Ungrouped, so ToolCallDisplay shows only approvals, embeds and images
+				displayItems.push({ type: 'detail_single', id: `detail-${displayItems.length}`, token });
 			}
 			return;
 		}

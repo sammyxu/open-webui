@@ -188,14 +188,48 @@
 	$: localizedModelName = model ? resolveLocalizedModelName(model, $i18n.language) : message.model;
 	$: model = $models.find((m) => m.id === message.model);
 
+	$: hideProcessingDetails = $settings?.hideProcessingDetails ?? false;
 	$: statusEntries = message?.statusHistory ?? [...(message?.status ? [message?.status] : [])];
 	$: hasVisibleStatus =
+		!hideProcessingDetails &&
 		(model?.info?.meta?.capabilities?.status_updates ?? true) &&
 		statusEntries.length > 0 &&
 		!(statusEntries.at(-1)?.hidden ?? false);
 	$: visibleResponseContent =
 		getOutputText(message.output) || removeAllDetails(message.content ?? '');
 	$: hasResponseContent = Boolean((message.content ?? '').trim() || message.output?.length);
+	// Custom pipes can put <details>/<status> in the answer text, which are hidden along with processing details
+	$: hasVisibleAnswerText = !!removeAllDetails(visibleResponseContent)
+		.replace(/<status\b[^>]*>/g, '')
+		.trim();
+	// Pending tool calls stay visible for the user to answer, so don't claim to be thinking
+	$: awaitingUserAction =
+		(message.output ?? []).some(
+			(item) =>
+				item?.type === 'function_call' &&
+				(item?.status === 'pending' || item?.status === 'requires_approval')
+		) || /<details\b[^>]*\bstatus="pending"/.test(message.content ?? '');
+	// Approving a tool call resumes generation on a message the chat has already marked done
+	$: runningApprovedToolCall = (() => {
+		const output = message.output ?? [];
+		const resolvedCallIds = new Set(
+			output.filter((item) => item?.type === 'function_call_output').map((item) => item.call_id)
+		);
+		return output.some(
+			(item) =>
+				item?.type === 'function_call' &&
+				item?.approved === true &&
+				!resolvedCallIds.has(item.call_id)
+		);
+	})();
+	$: responseInProgress =
+		!message.done || (hideProcessingDetails && runningApprovedToolCall && !awaitingUserAction);
+	$: showThinkingIndicator =
+		hideProcessingDetails &&
+		responseInProgress &&
+		!message.error &&
+		!hasVisibleAnswerText &&
+		!awaitingUserAction;
 
 	let edit = false;
 	let editedContent = '';
@@ -694,7 +728,7 @@
 			<div>
 				<div class="chat-{message.role} w-full min-w-full">
 					<div>
-						{#if model?.info?.meta?.capabilities?.status_updates ?? true}
+						{#if !hideProcessingDetails && (model?.info?.meta?.capabilities?.status_updates ?? true)}
 							<StatusHistory statusHistory={message?.statusHistory} />
 						{/if}
 
@@ -894,7 +928,15 @@
 								/>
 							{/if}
 
-							{#if !message.done && !message.error && (hasResponseContent || !hasVisibleStatus)}
+							{#if showThinkingIndicator}
+								<div class="status-description flex items-center gap-2 py-0.5 w-full text-left">
+									<div
+										class="shimmer text-gray-500 dark:text-gray-500 text-[0.9375rem] line-clamp-1"
+									>
+										{$i18n.t('Thinking...')}
+									</div>
+								</div>
+							{:else if responseInProgress && !message.error && (hasResponseContent || !hasVisibleStatus)}
 								<div class="text-[0.9375rem] leading-relaxed">
 									<span
 										class="inline-block w-[0.125rem] h-3.5 bg-gray-400 dark:bg-gray-500 ml-0.5 animate-pulse align-text-bottom"
@@ -916,7 +958,7 @@
 								/>
 							{/if}
 
-							{#if message.code_executions}
+							{#if message.code_executions && !hideProcessingDetails}
 								<CodeExecutions codeExecutions={message.code_executions} />
 							{/if}
 						</div>

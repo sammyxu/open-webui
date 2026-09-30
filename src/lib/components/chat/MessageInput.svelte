@@ -1789,7 +1789,7 @@
 						{/if}
 
 						<!-- Task list display -->
-						{#if isActive && chatTasks.length > 0}
+						{#if isActive && chatTasks.length > 0 && !($settings?.hideProcessingDetails ?? false)}
 							<div class="mx-1">
 								<TaskList tasks={chatTasks} />
 							</div>
