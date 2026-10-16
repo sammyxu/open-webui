@@ -1,0 +1,91 @@
+{
+  "_doc": "Toolkit configuration for the MedIT GPT (Open WebUI v0.11.4, uoft branch) knowledgebase. Relative paths resolve against this directory. Keys beginning with an underscore are comments. Scope type 'regex' is a local extension in kbconfig.py (first capture group of a multiline regex across globs).",
+
+  "repo_root": "../..",
+  "kb_dir": "..",
+  "reference_dir": "reference",
+  "ai_dir": "ai",
+  "reference_sections": 14,
+  "inventory_file": "inventory.md",
+
+  "_source": "First-party code for the quote corpus. backend/data holds the local SQLite database, uploads and vector store (live data, never read). Translations: only en-US is included, because dotted i18n keys (settings.*) have their English text only there; plain-English keys are the text itself.",
+  "source": {
+    "dirs": ["backend", "src", "scripts"],
+    "extra_first_party_dirs": ["src/lib/i18n/locales/en-US"],
+    "skip_dirs": ["node_modules", ".git", "__pycache__", ".svelte-kit", "build", "data", "locales", "pyodide", "swagger-ui", ".venv", "venv"],
+    "extensions": [".py", ".svelte", ".ts", ".js", ".json", ".sh", ".html", ".yaml", ".yml", ".toml", ".mako", ".ini", ".bat"],
+    "_extra_files": "Local extension in verify_quotes.py: repository-root files added to the quote corpus.",
+    "extra_files": ["Dockerfile", "Makefile", "docker-compose.yaml", "docker-compose.api.yaml", "docker-compose.data.yaml", "docker-compose.gpu.yaml", "docker-compose.amdgpu.yaml", "docker-compose.otel.yaml", "docker-compose.playwright.yaml", "docker-compose.a1111-test.yaml", "docker-run.sh", "docker-compose-launcher.sh", "docker-ollama.sh", "docker-update-models.sh", "docker-cleanup.sh", "hatch_build.py", "pyproject.toml", "package.json"]
+  },
+
+  "_citations": "Repository-relative citation prefixes. root_files is a local extension in validate.py for files at the repository root.",
+  "citations": {
+    "path_prefixes": ["backend", "src", "static", "scripts", "docs", "test", "knowledgebase", ".github"],
+    "extensions": ["py", "svelte", "ts", "js", "json", "md", "txt", "yaml", "yml", "toml", "ini", "mako", "sh", "bat", "css", "html", "csv", "xml", "webmanifest", "svg", "png", "ico"],
+    "root_files": ["Dockerfile", "Makefile", "package.json", "package-lock.json", "pyproject.toml", "uv.lock", "hatch_build.py", "CHANGELOG.md", "README.md", "TROUBLESHOOTING.md", "LICENSE", "LICENSE_NOTICE", "LICENSE_HISTORY", "CLAUDE.md", ".env.example", ".gitignore", ".prettierignore", "svelte.config.js", "vite.config.ts", "tailwind.config.js", "postcss.config.js", "i18next-parser.config.ts", "tsconfig.json", "docker-compose.yaml", "docker-compose.api.yaml", "docker-compose.data.yaml", "docker-compose.gpu.yaml", "docker-compose.amdgpu.yaml", "docker-compose.otel.yaml", "docker-compose.playwright.yaml", "docker-compose.a1111-test.yaml", "docker-run.sh", "docker-compose-launcher.sh", "docker-ollama.sh", "docker-update-models.sh", "docker-cleanup.sh", "contribution_stats.py"]
+  },
+
+  "_quotes": "Documents quote messages verbatim; interpolated values are written as {name} (Python f-string and i18next {{count}} style) or <name>.",
+  "quotes": {
+    "min_len": 20, "max_len": 400, "min_spaces": 4,
+    "starts_with": "^[A-Z\"'<(\\[]",
+    "path_like_prefixes": ["backend/", "src/", "static/", "scripts/", "knowledgebase/", "/", "$", "http", "SELECT ", "UPDATE ", "INSERT ", "DELETE ", "PRAGMA ", "GET ", "POST ", "PUT ", "PATCH ", "curl ", "docker ", "uvicorn ", "npm ", "python", "pip ", "uv ", "git ", "grep ", "cd ", "sqlite3 ", "psql ", "alembic ", "export ", "WEBUI_SECRET_KEY="],
+    "placeholder_patterns": ["\\{\\{[^}]*\\}\\}", "<[^>]{1,60}>", "%\\d*\\$?[sd]", "«[^»]*»", "\\{[^}]*\\}", "\\[[^\\]]*\\]", "…", "\\.\\.\\."],
+    "fragment_min_len": 24, "chunk_len": 40, "long_fragment_len": 44
+  },
+
+  "_scopes": "Every enumerable set. Used by inventory.py (all scopes) and check_coverage.py (scopes with docs).",
+  "scopes": [
+    {"label": "Backend API routers", "dir": "backend/open_webui/routers", "pattern": ".*\\.py", "strip": ".py", "note": "Mounted under `/api/v1/<name>` except `ollama` (`/ollama`) and `openai` (`/openai`); see backend/open_webui/main.py.", "docs": ["backend-architecture-and-request-lifecycle.md"]},
+    {"label": "Top-level endpoints defined in main.py", "type": "regex", "globs": ["backend/open_webui/main.py"], "regex": "^@app\\.(?:get|post|put|delete|api_route)\\('([^']+)'", "unit": "routes", "docs": ["backend-architecture-and-request-lifecycle.md", "public-api-and-integrations.md"]},
+    {"label": "Database tables (SQLAlchemy models)", "type": "regex", "globs": ["backend/open_webui/models/*.py", "backend/open_webui/internal/*.py"], "regex": "__tablename__\\s*(?::\\s*\\w+\\s*)?=\\s*['\"](\\w+)['\"]", "unit": "tables", "docs": ["database-schema-identity-chats-and-config.md", "database-schema-content-and-collaboration.md"]},
+    {"label": "Tables created by Alembic migrations (including the initial schema list)", "type": "regex", "globs": ["backend/open_webui/migrations/versions/*.py"], "regex": ["op\\.create_table\\(\\s*['\"](\\w+)['\"]", "^    \\(\\n        '(\\w+)',\\n        \\["], "unit": "tables", "docs": ["database-schema-identity-chats-and-config.md", "database-schema-content-and-collaboration.md"]},
+    {"label": "Background loops started at startup", "type": "regex", "globs": ["backend/open_webui/**/*.py"], "regex": "^async def (periodic_\\w+|scheduler_worker_loop|automation_worker_loop|redis_\\w+_listener|redis_task_heartbeat)\\(", "unit": "loops", "docs": ["background-processes-and-scheduling.md"]},
+    {"label": "Enum members in constants.py (ERROR_MESSAGES, MESSAGES, WEBHOOK_MESSAGES, TASKS)", "type": "regex", "globs": ["backend/open_webui/constants.py"], "regex": "^    ([A-Z][A-Z0-9_]+) = ", "unit": "constants", "docs": ["error-messages-backend-identity-admin-and-platform.md", "error-messages-backend-chat-content-and-features.md", "chat-completion-pipeline-and-generation-tasks.md"]},
+    {"label": "Persistent config keys (DEFAULT_CONFIG)", "type": "regex", "globs": ["backend/open_webui/config.py"], "within": ["^DEFAULT_CONFIG = \\{", "^\\}"], "regex": "^    '([^']+)'\\s*:", "unit": "keys", "docs": ["configuration-persistent-settings-a-to-o.md", "configuration-persistent-settings-r-to-w.md"]},
+    {"label": "Environment variables read in env.py and elsewhere (not config.py)", "type": "regex", "globs": ["backend/open_webui/env.py", "backend/open_webui/__init__.py", "backend/open_webui/internal/*.py", "backend/open_webui/utils/*.py", "backend/open_webui/routers/*.py", "backend/open_webui/retrieval/**/*.py", "backend/open_webui/socket/*.py", "backend/open_webui/storage/*.py"], "regex": "os\\.(?:environ\\.get|getenv)\\(\\s*['\"]([A-Z][A-Z0-9_]+)['\"]", "unit": "variables", "docs": ["configuration-environment-variables-bootstrap.md"]},
+    {"label": "Environment variables read in config.py", "type": "regex", "globs": ["backend/open_webui/config.py"], "regex": "os\\.(?:environ\\.get|getenv)\\(\\s*['\"]([A-Z][A-Z0-9_]+)['\"]", "unit": "variables", "docs": ["configuration-persistent-settings-a-to-o.md", "configuration-persistent-settings-r-to-w.md", "configuration-environment-variables-bootstrap.md"]},
+    {"label": "Built-in (native) tools", "type": "regex", "globs": ["backend/open_webui/tools/builtin.py"], "regex": "^async def ([a-z][a-z0-9_]+)\\(", "unit": "functions", "docs": ["builtin-native-tools.md"]},
+    {"label": "Socket.IO event handlers", "type": "regex", "globs": ["backend/open_webui/socket/*.py"], "regex": "@sio\\.on\\(\\s*['\"]([^'\"]+)['\"]", "unit": "events", "docs": ["websockets-realtime-and-redis.md"]},
+    {"label": "Web search providers", "dir": "backend/open_webui/retrieval/web", "pattern": "(?!main|utils|__init__).*\\.py", "strip": ".py", "docs": ["web-search-and-web-loading.md"]},
+    {"label": "Vector database backends", "dir": "backend/open_webui/retrieval/vector/dbs", "pattern": "(?!__init__).*\\.py", "strip": ".py", "docs": ["rag-retrieval-embeddings-and-vector-stores.md"]},
+    {"label": "Content extraction loaders", "dir": "backend/open_webui/retrieval/loaders", "pattern": "(?!__init__).*\\.py", "strip": ".py", "docs": ["rag-retrieval-embeddings-and-vector-stores.md"]},
+    {"label": "Frontend pages (SvelteKit routes)", "dir": "src/routes", "pattern": "\\+page\\.svelte", "recurse": true, "relative": true, "unit": "pages", "docs": ["frontend-architecture-routes-stores-and-i18n.md"]},
+    {"label": "Frontend API client modules", "dir": "src/lib/apis", "pattern": ".*", "kind": "dirs", "docs": ["frontend-architecture-routes-stores-and-i18n.md"]},
+    {"label": "Admin settings panels", "dir": "src/lib/components/admin/Settings", "pattern": "(?!Admin).*\\.svelte", "strip": ".svelte", "docs": ["admin-settings-panels.md"]},
+    {"label": "User settings panels", "dir": "src/lib/components/chat/Settings", "pattern": "(?!UserSetting).*\\.svelte", "strip": ".svelte", "docs": ["user-settings-and-personalisation.md"]},
+    {"label": "Docker Compose files", "dir": ".", "pattern": "docker-compose.*\\.yaml", "docs": ["deployment-operations-and-logging.md"]},
+    {"label": "CI workflows", "dir": ".github/workflows", "pattern": ".*", "docs": ["developer-tools-scripts-and-tests.md"]},
+    {"label": "Repository scripts", "dir": "scripts", "pattern": ".*", "kind": "any", "docs": ["developer-tools-scripts-and-tests.md"]}
+  ],
+
+  "_counts": "Scale figures for the inventory's Scale table.",
+  "counts": [
+    {"label": "Alembic migration files", "dir": "backend/open_webui/migrations/versions", "pattern": ".*\\.py"},
+    {"label": "Backend Python files (backend/open_webui)", "relative": true, "dir": "backend/open_webui", "pattern": ".*\\.py", "recurse": true},
+    {"label": "Model (repository) files", "dir": "backend/open_webui/models", "pattern": ".*\\.py"},
+    {"label": "Utility modules (backend/open_webui/utils, recursive)", "relative": true, "dir": "backend/open_webui/utils", "pattern": ".*\\.py", "recurse": true},
+    {"label": "Svelte components (src, recursive)", "relative": true, "dir": "src", "pattern": ".*\\.svelte", "recurse": true},
+    {"label": "Icon components", "dir": "src/lib/components/icons", "pattern": ".*\\.svelte"},
+    {"label": "Translation locales", "dir": "src/lib/i18n/locales", "pattern": ".*", "kind": "dirs"},
+    {"label": "Backend test files", "relative": true, "dir": "backend/open_webui", "pattern": "test_.*\\.py", "recurse": true}
+  ],
+
+  "index": {
+    "symptoms_section": 11,
+    "glossary_docs": ["01-dictionary-terms-acronyms.md", "reference/terminology-glossary.md"],
+    "module_table": {"doc": "03-system-overview-and-features.md", "regex": "^\\| `([A-Za-z0-9_ -]+)` \\| `(/[^`]*)` \\|(.*)$"}
+  },
+
+  "absolutes": {"words": ["never", "always", "cannot", "can't", "only ever", "silently", "impossible", "guaranteed", "every time", "no way"]},
+  "transfer_gap": {"min_keyword_ratio": 0.6, "min_keywords": 2},
+
+  "_pii": "No functional mailbox exists in the repository for this deployment. extra_patterns also catch secrets that must never appear: JWTs, OpenAI-style keys, AWS access key ids, Open WebUI API keys.",
+  "pii": {
+    "allowed_emails": ["git@github.com"],
+    "allowed_values": [],
+    "allowed_domains": ["example.com", "example.org", "example.net", "example.edu", "example.ca", "localhost", "invalid", "test", "example"],
+    "organisation_words": ["University", "Organisation", "Organization", "Department", "Institute", "College", "Faculty", "Consortium", "Commons", "Inc", "Ltd", "LLC", "Team", "Group", "School", "Hospital", "Centre", "Center", "Project", "Foundation"],
+    "extra_patterns": ["eyJ[A-Za-z0-9_-]{20,}\\.[A-Za-z0-9_-]{10,}", "\\bsk-[A-Za-z0-9_-]{20,}", "\\bAKIA[0-9A-Z]{16}\\b"]
+  }
+}

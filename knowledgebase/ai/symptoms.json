@@ -1,0 +1,2675 @@
+{
+ "generated": "2026-10-10",
+ "symptoms": [
+  {
+   "symptom": "I changed a setting and nothing happened",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My setting reverted after a restart",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Save button does nothing",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't download the database",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Users still see the old wording",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the setting for sign-up, banners or prompt suggestions",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The admin settings link opens my personal settings",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The OAuth settings are greyed out",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A change I made on Authentication was undone",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Users don't get the interface default I set",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The banner keeps coming back or Users don't see the banner",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The import said it worked but things don't match",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The response watermark doesn't show",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Someone wants a copy of the settings or the database",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "General says an update is available",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Analytics tab or the Database Export section is missing",
+   "doc": "reference/admin-settings-panels.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no microphone, speaker or call button",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The microphone button does nothing",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I get 'Transcription failed.' or an error mentioning 'Open WebUI' or 'External'",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Transcription is wrong or in the wrong language",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the file is too large",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Read aloud is silent",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Read aloud says 'No content to speak' or skips code and tables",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The voice sounds different",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Kokoro says 'Loading Kokoro.js...' forever",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't start a voice call",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Voice call keeps cutting out",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The call is stuck on 'Tap to interrupt' or 'Thinking...' and nothing is said",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The camera doesn't work in a call",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I saved the Audio settings and nothing happened (Administrators)",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Is my voice recorded, and where does it go?",
+   "doc": "reference/audio-speech-to-text-and-text-to-speech.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't sign in with my email and password",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'API rate limit exceeded' when I sign in",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I made an account but all I see is 'Account Activation Pending'",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no 'Sign up' link or Sign-up says I don't have permission",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The sign-in page has no email and password boxes",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "LDAP sign-in says 'LDAP authentication failed.'",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I keep getting 'Session expired. Please sign in again.'",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I see '401 Unauthorized' when I open MedIT GPT",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Everyone was signed out at the same time",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I signed out, but I'm still signed in on my other computer",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My new password is rejected",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Change Password says my current password is incorrect",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find where to change my password",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I forgot my password",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find API keys in my settings",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Clicking 'Create new secret key' does nothing",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My API key returns 'Use of API key is not enabled in the environment.'",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My API key works for some things but others say I don't have permission",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Nothing happens when I click Sign in",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Nothing happens when I click Sign Out",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The page says 'MedIT GPT Backend Required'",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I changed the JWT Expiration but nothing changed (admins)",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The pending screen shows the wrong admin contact, or none",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Single sign-on says the email or password is incorrect",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I think my API key or session token was exposed",
+   "doc": "reference/authentication-and-sign-in.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My automation didn't run",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It ran twice",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It ran at the wrong time",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't see Automations (or Calendar) anywhere",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't create an automation",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Runs shows a green dot but there's no answer",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Calendar reminders never arrive",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Recurring event won't save",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I changed one occurrence and the earlier ones disappeared or Deleting one occurrence deleted them all",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't share my calendar or How do I invite people or accept an invitation?",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't delete a calendar",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The automation's answer has the wrong date",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Last run says Never, but it ran",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The reminder in my chat never went off (Timer)",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My event is on the wrong day or It spans two days",
+   "doc": "reference/automations-calendar-and-timers.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It didn't search the web or The model says it can't browse",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It can't see my notes / memories / calendar / channels / earlier chats",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every step asks me to Allow or Deny",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't see Tool Permissions (Ask for approval) in the menu",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My reply is stuck or I clicked Allow and nothing happened",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says I don't have permission when I click Allow or answer the question",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A question box appeared above where I type or The question disappeared",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The AI changed or deleted something I didn't ask it to",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It has said 'Executing…' for ages",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Tool-call limit reached (256 iterations).'",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The notification never arrived",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The reminder (timer) never went off",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see the tool steps any more or It only says Thinking…",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It brought up something from another of my chats",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It used a knowledge base I didn't attach",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Tools work in the chat page but not through the API",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The event was put in the wrong calendar or at the wrong time",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model says the tool isn't available or Tool not found",
+   "doc": "reference/builtin-native-tools.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see Channels in the sidebar",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find a channel someone invited me to",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model doesn't answer when I mention it",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My message disappeared",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Notifications don't arrive",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A webhook stopped posting",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can read the channel but I can't post",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Channels disappeared from my sidebar but I still get channel pop-ups",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Opening the channel takes me back to the home page",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't add or remove people",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Saving or deleting the channel shows an empty red box",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "How do I leave a channel?",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The unread count is wrong",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A direct message vanished from my sidebar",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Colleagues get an empty pop-up with my name when I mention a model",
+   "doc": "reference/channels-and-direct-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the model isn't found",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The response just stops halfway",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My chat never got a title",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I pressed Send and nothing happens until I refresh",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I pressed Stop but it kept going",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Uh-oh! There was an issue with the response.'",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Open WebUI: Server Connection Error'",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't get suggested follow-up questions",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Titles and suggestions work for my admin but not for me",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It said 'Compacting context' and now the assistant forgot what we discussed",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Tool-call limit reached'",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I turned on web search but it didn't search",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The assistant ignores my knowledge base or attached files",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My answer disappeared when I reloaded the page",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't fork this chat",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Autocomplete suggestions don't appear while I type",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The reply is waiting for my approval and won't go away",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Failed to connect to MCP server'",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "An admin saved the task settings but they didn't change",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's an error box under an answer that looks complete",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A webhook says my chat failed but the answer looks fine",
+   "doc": "reference/chat-completion-pipeline-and-generation-tasks.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Pressing Enter doesn't send my message",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Enter sends my message before I've finished",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The send button is grey and I can't send",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My message is stuck in a box above the input and hasn't been sent",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Model not selected'",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I get 'Uh-oh! There was an issue with the response.'",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The answer stopped halfway / never finished",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see the thinking steps, tool details or 'Searching...' lines anymore",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It just says 'Thinking...' and nothing else for a long time",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The little [1] source links in answers disappeared",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Numbers in square brackets vanished from my answer",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A tool keeps asking me to Allow or Deny or It says 'Tool call has already been resolved.'",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't attach files; the + menu items are greyed out",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My image upload says the model doesn't support images",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Web Search, Image or Code Interpreter is missing from the menu",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A 'Use Web Search?' window pops up",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no Run button on my code or It says 'Execution Time Limit Exceeded'",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The diagram shows 'Failed to render diagram'",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I edited my question and my old answer disappeared or What does 2/2 mean?",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I switched to another answer version, but after reloading it shows the old one",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a message but it came back after reloading",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Delete, Regenerate, Continue or thumbs buttons are missing",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My prompt still shows {{...}} in the text",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A 'Chat Variables' window opens when I try to send",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The microphone or voice button says permission denied",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The chat says 'Read only' and there's no input box",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Pasting long text turned it into a file",
+   "doc": "reference/chat-composer-and-message-display.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I sent my colleague a share link but it just takes them to the home page",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Who can see the chat I shared?",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The person I shared with sees an old version of the chat",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My chat has disappeared from the sidebar",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Folders section is gone, and so are the chats that were in my folders",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I archived a chat and now I can't find it",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I unarchived a chat but it didn't go back into its folder",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a chat by mistake. Can you get it back?",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a folder and the chats inside it are gone",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no Delete option or It says I don't have permission to delete",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no Share option or I can't make my link Public",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Search doesn't find my chat",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My tags disappeared or My imported chats lost their tags",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My chat import didn't do anything",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can see the chats in a shared folder but I can't change anything",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Clicking a link to my chat just opens a new chat",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A chat keeps showing a blue dot or a spinner",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted the chat but the share link still opens or My chat reached the wrong people",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every new chat is temporary and nothing is saved",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Can people I share a folder with, or admins, read my chats?",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't move a chat into a folder",
+   "doc": "reference/chat-conversations-history-and-organisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Run button does nothing (or There is no Run button)",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Code runs forever (or It says Execution Time Limit Exceeded)",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says a module isn't available",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The code interpreter doesn't run my code",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Files created by the code don't show up",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Running code shows an Error: message",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the Code Interpreter switch",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My chart doesn't appear",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The code interpreter ran, but ignores the errors",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Files I made earlier are gone (or I see files I didn't make)",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The page gets slow after I run code a few times",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Pressing Ctrl+Shift+F gave me several error messages",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The output of my Run disappeared",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Code Execution settings did not save (Administrators)",
+   "doc": "reference/code-execution-and-interpreter.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says my file is too large or not supported",
+   "doc": "reference/error-messages-backend-chat-content-and-features.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'We could not find what you're looking for :/'",
+   "doc": "reference/error-messages-backend-chat-content-and-features.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the model was not found",
+   "doc": "reference/error-messages-backend-chat-content-and-features.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says duplicate content detected",
+   "doc": "reference/error-messages-backend-chat-content-and-features.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My document uploaded, but the answers say there is no text or quote an error",
+   "doc": "reference/error-messages-backend-chat-content-and-features.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The reply shows an error from the AI provider",
+   "doc": "reference/error-messages-backend-chat-content-and-features.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It just says 'Something went wrong :/'",
+   "doc": "reference/error-messages-backend-chat-content-and-features.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the email or password is incorrect",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Everything I click says I don't have permission",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says my session has expired or the token is invalid",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I see '401 Unauthorized'",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'API rate limit exceeded' when I sign in",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My chat says 'Model not found'",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It just says 'Something went wrong :/'",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I got a message that starts with '[ERROR:'",
+   "doc": "reference/error-messages-backend-identity-admin-and-platform.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It keeps saying Connection lost. Reconnecting...",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The page says MedIT GPT Backend Required",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says Session expired. Please sign in again.",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I get a red pop-up that just says [object Object]",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I clicked and nothing happened or My file just disappeared",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It said Copied (or Saved), but it wasn't",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every time I open MedIT GPT it says Failed to connect to … OpenAPI tool server",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A red pop-up appeared with no text",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The message I got isn't in your list or Part of the screen is in English",
+   "doc": "reference/error-messages-frontend-chat-and-navigation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The thumbs buttons are missing",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I pressed thumbs up and nothing happened or The thumbs buttons are greyed out",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't remove my rating",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The leaderboard is empty or Every model shows a dash",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The leaderboard numbers don't match the chart or Won and Lost don't add up",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Searching the leaderboard doesn't change the ranking",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the Analytics page or Evaluations is missing",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Analytics shows the wrong day or The hours are off",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Analytics numbers are lower than expected or Usage went down",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find Usage",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Usage says Failed to load usage or No usage data found",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My streak or active days are wrong",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Exported feedback is huge",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The CSV export has an empty chat_id column",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a rating but the thumb is still highlighted or A deleted rating came back",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see the Arena Model or Only admins can see the arena",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The arena keeps picking the same model or It picked a model I didn't expect",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The arena reveal shows a code instead of a model name",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The active users count is missing or looks wrong",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A feedback entry has disappeared from the Feedback list",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Feedback Details shows no prompt or response or The Chat ID link doesn't open",
+   "doc": "reference/evaluations-feedback-and-analytics.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says my file type is not allowed",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says my file is too large",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can only attach a few files at a time",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I got a yellow warning after uploading or The AI says it can't see my document",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My file is stuck with a spinner",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My upload fails with [ERROR: …]",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My old chat says 'Image unavailable' or The file in my chat is empty now",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A file vanished from my knowledge base",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My colleague can't open a file I attached",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My Files list shows files I never uploaded",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The preview says it failed to load",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My PowerPoint preview looks wrong",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no Google Drive or OneDrive option",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Google Drive says 'Error accessing Google Drive: …'",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Nothing happens when I pick a file in OneDrive",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My image came out smaller or blurry",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I removed the file from my message but it's still in my Files",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "An image from a website shows the MedIT GPT icon instead",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "All my files and knowledge bases are empty",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Can you restore a file I deleted?",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a file without being asked",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Clicking the file downloads it instead of opening it",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My downloaded image is called generated_image.png",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My file won't attach in a temporary chat",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The side panel Files tab says 'No Terminal connection configured.'",
+   "doc": "reference/files-uploads-and-storage.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model answered with an error box instead of a reply",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A function model disappeared from the model list",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A filter stopped working after an update",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The action button does nothing",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The server takes ages to start (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Pipelines server won't connect or It says 'Pipelines Not Detected' (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every chat stops after a few questions with 'Conversation turn limit exceeded'",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the Functions page (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I switched a function on but nothing changed (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I clicked Save & Create and nothing happened (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It said 'Functions imported successfully' but the functions aren't there (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My valves settings don't stick",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Words are missing from answers or The answer changed after it finished",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The filter switch I expect isn't in my Integrations menu",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "All our functions are switched off (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Import From Link says 'Failed to fetch the function' (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Uploading or installing a pipeline fails (Admins)",
+   "doc": "reference/functions-pipes-filters-actions-and-pipelines.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The image button is missing",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Image generation never finishes",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the engine isn't configured",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My image came out the wrong size",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Edit image doesn't work",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It said the image was created but no picture appears",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I turned on Image but the model only answered in text",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Something went wrong :/' or '[ERROR: Bad Request]'",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The picture doesn't match what I asked for",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every new picture request edits my old picture",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the Playground or It sends me back to the start page",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The playground says I don't have permission",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Saving the Images settings does nothing (Admin)",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Someone I shared the chat with can't see the picture",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I see 'Thinking...' instead of 'Creating image'",
+   "doc": "reference/image-generation-and-editing.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It just says Thinking... forever",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It said Searching the web and then nothing",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's a red error under the answer",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says No sources found",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says Server Connection Error",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A tool has a red cross (or It says Error: Tool … not found)",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It stopped and asks me to Allow something",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see the progress steps any more",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says Model not found",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The status line is in English but my interface is in another language",
+   "doc": "reference/in-chat-status-and-response-messages.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't see Knowledge in the Workspace or I can't create a knowledge base",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My colleague can't see the knowledge base I shared or I can't find a knowledge base shared with me",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The knowledge base says Read Only or I can't upload to it",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My file upload failed",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It said the file was added, but it isn't in the knowledge base",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A file has been processing for ages",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Duplicate content detected'",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Sync directory deleted my files",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Uploading the folder again failed for almost every file",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I removed a file from the knowledge base and now it's gone from my model or chat",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "When I pick a knowledge base with # it disappears from the message box",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Deleting a directory deleted my files",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model quoted a knowledge base I didn't attach",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model doesn't use my knowledge base or It says No sources found",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted (or reset) a knowledge base by mistake. Can it be restored?",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I edited a file's text and the change didn't stick",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Search doesn't find a file I know is there or The file count looks wrong",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no Export option or The export only contains text files",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Testing a connected knowledge base gives a permission error",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It won't let me create or rename a directory",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Admin: We reindexed, but some documents are no longer found",
+   "doc": "reference/knowledge-bases.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It remembered something I didn't want saved",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My memories aren't being used or It forgot what I told it",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find Personalization",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Memory says it's full",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My memories disappeared",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a memory but it still comes up",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Add Memory just spins and nothing happens",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Memory content cannot be empty' or 'Invalid memory path'",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted my chats but it still knows things about me",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Who can see my memories? or Is it safe to keep health details in memory?",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Please delete my memories when my account is closed",
+   "doc": "reference/memories.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A model disappeared from the list",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My model list is empty or It says No results found",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the model isn't found",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Verify connection fails (Admin)",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every answer fails with a message about the API key, quota or rate limit",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Answers fail with Open WebUI: Server Connection Error",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Some answers fail and others work with the same model",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The new model the admin added doesn't show up for me",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Nobody can chat since the admin changed a connection",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Ollama download is stuck (Admin)",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My own connection in Settings doesn't work",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't see Connections in my Settings",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Answers take forever or never finish",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model list takes a long time to load",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Playground does nothing when I press Run (Admin)",
+   "doc": "reference/model-connections-openai-ollama-and-direct.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My note didn't save",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Someone else's changes overwrote mine",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see the note someone shared with me",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Notes is missing from the sidebar",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The AI button in notes does nothing",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says Read-Only Access and I can't type",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't rename a note that's shared with me",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't share my note",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My note disappeared",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't see other people's changes until I reload",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A picture in my note shows a placeholder or the site logo",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The PDF of my note is just a picture",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Opening a note link sends me back to the home page",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The import said it worked, but my notes aren't there",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I have lots of empty notes named with dates",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't attach a file to my note",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The AI changed my note and the formatting is different",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Can an admin read my notes?",
+   "doc": "reference/notes.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I never get notified when my chat finishes",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The webhook stopped working",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Send Test says Webhook delivery failed",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Users don't see the banner",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says a new version is available",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A webhook says my chat failed but the answer looks fine",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The link in my notification opens a Not Found page",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find Notification Targets in my settings",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Our Teams channel gets nothing, or shows raw text",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Our admin webhook is full of people's messages",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Browser notifications pop up on the wrong computer, or twice",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The What's New window keeps showing Open WebUI release notes",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I get no channel message notifications",
+   "doc": "reference/notifications-webhooks-events-and-banners.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My slash command doesn't show up when I type /",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the command is already taken",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says only alphanumeric characters and hyphens are allowed",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The variables box doesn't appear or A box asks me for values I didn't expect",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see a prompt someone shared or My colleague can't see the prompt I shared",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't see Prompts or Skills in the Workspace or Create says 401 Unauthorized",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I saved my prompt but the old text is still used",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I restored an old version but the command or sharing didn't come back",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Public sharing disappeared after a colleague edited it",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't delete this version",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The on/off switch flips back or I switched it off but it's on again",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Importing prompts did nothing or It showed a block of text",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model ignores my skill",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I switched a skill off in the chat but the model still follows it",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Creating a skill fails",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The skill import said it worked, but nothing appeared",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My skill isn't in the $ list or the Integrations menu",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "/skills:create says I need a terminal or Create skill isn't in the list",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The prompt filled in my name, email or location",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Choosing a prompt in a channel inserts a chip instead of the text",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a prompt or skill by mistake. Can it be restored?",
+   "doc": "reference/prompts-and-skills.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I attached a file, got a yellow warning, and the AI says it can't see the document",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'The content provided is empty. Please ensure that there is text or data present before proceeding.'",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Duplicate content detected. Please provide unique content to proceed.'",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The AI ignores my document or knowledge base and the status says 'No sources found'",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Search stopped finding things (or got worse) after the admin changed something",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every upload fails with 'No embedding model is loaded...'",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The answer quotes text like 'Error during processing' or '<No text content found>'",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The AI only uses a small part of my long document",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the file is too large, or my file type isn't allowed",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My upload spins for a very long time",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The sources list shows the wrong document, or two of my files appear as one",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't see any sources or [1] numbers under the answer",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The relevance percentage on a source looks low",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "(Admin) I turned on hybrid search and it switched itself off",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "(Admin) I pressed Save on the Documents page and nothing happened, or got an error and a success together",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "(Admin) Reindex said Success but some documents still aren't found",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "(Admin) After 'Reset Upload Directory' everything is gone",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "(Admin) The external knowledge test does nothing, or says 'Test returned no results.'",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Pandoc is not installed on the server. Please contact your administrator for assistance.'",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model gives an error when I use 'Using Entire Document' with a big file",
+   "doc": "reference/rag-retrieval-embeddings-and-vector-stores.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The SSO button says my email or password is wrong",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Single sign-on says I don't have permission",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Single sign-on says my email is already registered",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no single sign-on button",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The SSO button shows 'Not Found' or 'Internal Server Error'",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "After signing in at the identity provider I'm back on the sign-in page",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I signed out but I'm still signed in to the identity provider",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I signed out of the identity provider but MedIT GPT is still open",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "SCIM-created accounts can't sign in",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I keep getting removed from my group",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I was an admin and now I'm a regular user",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "An account we suspended is active again (admins)",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It just says 'Signing in to MedIT GPT' and never finishes",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'User mismatch. Please sign in again.'",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My name or photo keeps changing back",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "New single sign-on users only see 'Account Activation Pending'",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The tool server says to reconnect",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Connecting a tool shows an error page or 'OAuth callback failed'",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My changes to the OAuth settings didn't stick (admins)",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Our program gets 'User not found. Please sign in via the web interface first.'",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It sends me straight to the identity provider",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I see '[ERROR: Error during OAuth process]'",
+   "doc": "reference/sso-oauth-oidc-and-scim.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My settings didn't save",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My settings are different on my other computer",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the Interface tab",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The language didn't change",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Processing details are hidden and I want them back",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The [1] source numbers disappeared from answers",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My theme keeps changing back",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A setting changed by itself or A switch says Default",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I set an interface default for everyone but people don't see it (admins)",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Keyboard shortcuts don't work",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "About says a new version is available",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The page is stuck loading and said Failed to load Interface settings",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Browser notifications, auto-copy or location keep switching themselves off",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't see the System Prompt or Advanced Parameters",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I archived all my chats. Are they gone?",
+   "doc": "reference/user-settings-and-personalisation.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I signed up but it just says my account is pending",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My account was approved but I still see the pending screen",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The admin page says 'The requested action has been restricted as a security measure.'",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no delete button for this user",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My user import CSV keeps saying 'invalid format'",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I turned a permission off but people still have it",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I gave a group a permission but a member still can't see the feature",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I shared it with my colleague but they can't see it",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the person or group I want to share with",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Someone shared a model with me but it says 'Model not found'",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The Workspace link has disappeared or I don't have a Workspace",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My group membership keeps disappearing",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "New users aren't being added to the default group",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Other people can see my name and email",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Can an admin read my chats?",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "We deleted a user by mistake. Can we get their chats back?",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I reset a user's password but they are still signed in on another device",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The green 'active' dot or the active-user count looks wrong",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I set it to Public and it said 'Saved', but it's private again",
+   "doc": "reference/users-groups-roles-and-permissions.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no Web Search option in my chat",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I turned on Web Search but the answer didn't search the web",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says '[ERROR: No results found from web search]'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It searched the web but the answer doesn't use the results",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Failed to embed and store the retrieved web pages...'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says '[ERROR: Something went wrong while searching the web.]'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The AI says it can't search: 'No ... API key found in environment variables'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A 'Use Web Search?' window keeps popping up",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Web search makes the answer very slow",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Attach Webpage says '[ERROR: Error processing URL]'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Attach Webpage says 'Please enter a valid URL.'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't attach a page from our internal site",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My YouTube video won't attach",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'You do not have permission to upload web content.'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The page I attached is empty or only says something like 'Moved Permanently'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Attaching a link to a PDF says the file is too large",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Attaching a page says '[ERROR: Error querying knowledge base]'",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "(Admin) I pressed Save on the Web Search page and nothing happened",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The AI used a site our domain filter should exclude",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Where does my web search go? Is it private?",
+   "doc": "reference/web-search-and-web-loading.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find the model I'm supposed to use",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model is in the list but every message fails with 'Model not found'",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I don't have Workspace › Models or I can't create a model",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says the model ID is already registered",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The editor won't accept my model ID",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I shared my model, but my colleague can't see it",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model ignores its knowledge base when other people use it",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model's tools or skills aren't switched on for my colleagues",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "We hid the model, but people are still using it",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My chat switched to another model or Old replies show a code instead of the model name",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A model disappeared for everyone",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I deleted a model by mistake. Can it be restored?",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "New chats keep starting with the wrong model or Set as default doesn't stick",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My pinned models changed or I don't see the models the admin pinned",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "My import didn't do anything or Some models weren't imported",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Export fails with 'Could not export background for model …'",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't add a background image to my model",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't edit a model that was shared with me",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model selector says 'No results found' or 'No models available'",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Admin: I configured or shared a provider model, but users still can't see it",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Admin: I changed Model Defaults, but a model still behaves the old way",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Admin: Saving a base model only says 'Failed to save model'",
+   "doc": "reference/workspace-models-and-model-access.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't find Tools in my Workspace",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A tool I expect isn't in my Integrations menu",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Saving my tool says '[ERROR: Error creating tool]'",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "A tool that used to work now fails",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The tool's settings went back to the defaults",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Users can't see the tool server I added (Admins)",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The model says the tool returned an error (for example 'HTTP error 401')",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Failed to connect to MCP server …'",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Every time I open MedIT GPT it says 'Failed to connect to … OpenAPI tool server'",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't add my own tool server or Settings > Integrations is missing",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "Registering the OAuth client says 'Registration failed' (Admins)",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "There's no terminal option in the chat",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It says 'Terminal unavailable: …'",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The terminal says [Connection closed]",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "It said 'Tool imported successfully' but the tool isn't there",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I can't edit this tool or It shows Read Only",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "I clicked Save & Create and nothing happened",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  },
+  {
+   "symptom": "The tool server's new functions don't show up (Admins)",
+   "doc": "reference/workspace-tools-tool-servers-mcp-and-terminals.md",
+   "section": "11"
+  }
+ ]
+}
