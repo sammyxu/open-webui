@@ -2920,7 +2920,7 @@
 	"settings.personal.interface.fontFamily.description": "Use a local font family for the app interface.",
 	"settings.personal.interface.fontFamily.label": "Font Family",
 	"settings.personal.interface.hapticFeedback.label": "Haptic Feedback",
-	"settings.personal.interface.hideProcessingDetails.description": "Show \"Thinking...\" instead of status updates, tool calls, and reasoning while a response is generated, and keep them hidden afterwards. Tool approval requests and tool outputs such as images still appear.",
+	"settings.personal.interface.hideProcessingDetails.description": "Show \"Thinking...\" instead of status updates, tool calls, reasoning, and code analysis while a response is generated, and keep them hidden afterwards. Tool approval requests and images or embeds from tools still appear.",
 	"settings.personal.interface.hideProcessingDetails.label": "Hide Processing Details",
 	"settings.personal.interface.iframeSandboxAllowDownloads.description": "Allow downloads inside sandboxed iframes.",
 	"settings.personal.interface.iframeSandboxAllowDownloads.label": "iframe Sandbox Allow Downloads",

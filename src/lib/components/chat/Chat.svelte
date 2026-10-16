@@ -2844,6 +2844,11 @@
 			message.usage = usage;
 		}
 
+		// Resuming after a tool approval reports done: false on a message the pause marked done
+		if (done === false) {
+			message.done = false;
+		}
+
 		history.messages[message.id] = message;
 		history = history;
 

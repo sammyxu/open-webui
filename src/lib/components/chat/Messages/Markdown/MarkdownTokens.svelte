@@ -89,11 +89,14 @@
 
 		for (const token of tokenList) {
 			if (isGroupableDetailToken(token)) {
-				if (!hideProcessingDetails) {
-					detailGroup.push(token);
-				} else if (isToolCallDetailToken(token)) {
-					// Ungrouped, so ToolCallDisplay shows only approvals, embeds and images
-					displayTokens.push(token);
+				// Hiding processing details keeps only tool calls, ungrouped, so ToolCallDisplay
+				// can still show approvals, embeds and images
+				if (hideProcessingDetails && !isToolCallDetailToken(token)) {
+					continue;
+				}
+				detailGroup.push(token);
+				if (hideProcessingDetails) {
+					flushDetailGroup();
 				}
 			} else {
 				flushDetailGroup();
@@ -519,7 +522,6 @@
 				attributes={token.attributes}
 				resultContent={getDetailTextContent(token)}
 				{allowEmbeds}
-				{hideProcessingDetails}
 				resolvable={!!chatId && !!messageId && save}
 				resolving={resolvingCallId === token.attributes?.id}
 				onResolve={(approved) => resolveToolCall(token.attributes?.id ?? '', approved)}

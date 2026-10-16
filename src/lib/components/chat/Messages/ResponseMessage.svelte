@@ -64,9 +64,15 @@
 	import { flyAndScale } from '$lib/utils/transitions';
 	import RegenerateMenu from './ResponseMessage/RegenerateMenu.svelte';
 	import StatusHistory from './ResponseMessage/StatusHistory.svelte';
+	import StatusItem from './ResponseMessage/StatusHistory/StatusItem.svelte';
 	import FullHeightIframe from '$lib/components/common/FullHeightIframe.svelte';
 	import OutputEditView from './OutputEditView.svelte';
-	import { getOutputText, replaceOutputMessageText, type OutputItem } from './structuredOutput';
+	import {
+		getOutputText,
+		hasPendingToolCall,
+		replaceOutputMessageText,
+		type OutputItem
+	} from './structuredOutput';
 
 	interface MessageType {
 		id: string;
@@ -189,47 +195,30 @@
 	$: model = $models.find((m) => m.id === message.model);
 
 	$: hideProcessingDetails = $settings?.hideProcessingDetails ?? false;
+	$: showStatusHistory =
+		!hideProcessingDetails && (model?.info?.meta?.capabilities?.status_updates ?? true);
 	$: statusEntries = message?.statusHistory ?? [...(message?.status ? [message?.status] : [])];
 	$: hasVisibleStatus =
-		!hideProcessingDetails &&
-		(model?.info?.meta?.capabilities?.status_updates ?? true) &&
-		statusEntries.length > 0 &&
-		!(statusEntries.at(-1)?.hidden ?? false);
+		showStatusHistory && statusEntries.length > 0 && !(statusEntries.at(-1)?.hidden ?? false);
 	$: visibleResponseContent =
 		getOutputText(message.output) || removeAllDetails(message.content ?? '');
 	$: hasResponseContent = Boolean((message.content ?? '').trim() || message.output?.length);
-	// Custom pipes can put <details>/<status> in the answer text, which are hidden along with processing details
-	$: hasVisibleAnswerText = !!removeAllDetails(visibleResponseContent)
-		.replace(/<status\b[^>]*>/g, '')
-		.trim();
-	// Pending tool calls stay visible for the user to answer, so don't claim to be thinking
-	$: awaitingUserAction =
-		(message.output ?? []).some(
-			(item) =>
-				item?.type === 'function_call' &&
-				(item?.status === 'pending' || item?.status === 'requires_approval')
-		) || /<details\b[^>]*\bstatus="pending"/.test(message.content ?? '');
-	// Approving a tool call resumes generation on a message the chat has already marked done
-	$: runningApprovedToolCall = (() => {
-		const output = message.output ?? [];
-		const resolvedCallIds = new Set(
-			output.filter((item) => item?.type === 'function_call_output').map((item) => item.call_id)
-		);
-		return output.some(
-			(item) =>
-				item?.type === 'function_call' &&
-				item?.approved === true &&
-				!resolvedCallIds.has(item.call_id)
-		);
-	})();
-	$: responseInProgress =
-		!message.done || (hideProcessingDetails && runningApprovedToolCall && !awaitingUserAction);
+
+	// Like visibleResponseContent, this ignores <details> blocks, plus the <status> tags that
+	// custom pipes can emit
+	const hasVisibleAnswerText = (output: OutputItem[] | undefined, content: string | undefined) =>
+		removeAllDetails(getOutputText(output) || content || '')
+			.replace(/<status\b[^>]*>/g, '')
+			.trim() !== '';
+
+	// While processing details are hidden, "Thinking..." stands in for them until answer text
+	// shows, except when a pending tool call is waiting on the user
 	$: showThinkingIndicator =
 		hideProcessingDetails &&
-		responseInProgress &&
+		!message.done &&
 		!message.error &&
-		!hasVisibleAnswerText &&
-		!awaitingUserAction;
+		!hasPendingToolCall(message.output) &&
+		!hasVisibleAnswerText(message.output, message.content);
 
 	let edit = false;
 	let editedContent = '';
@@ -728,7 +717,7 @@
 			<div>
 				<div class="chat-{message.role} w-full min-w-full">
 					<div>
-						{#if !hideProcessingDetails && (model?.info?.meta?.capabilities?.status_updates ?? true)}
+						{#if showStatusHistory}
 							<StatusHistory statusHistory={message?.statusHistory} />
 						{/if}
 
@@ -929,14 +918,8 @@
 							{/if}
 
 							{#if showThinkingIndicator}
-								<div class="status-description flex items-center gap-2 py-0.5 w-full text-left">
-									<div
-										class="shimmer text-gray-500 dark:text-gray-500 text-[0.9375rem] line-clamp-1"
-									>
-										{$i18n.t('Thinking...')}
-									</div>
-								</div>
-							{:else if responseInProgress && !message.error && (hasResponseContent || !hasVisibleStatus)}
+								<StatusItem status={{ description: $i18n.t('Thinking...'), done: false }} />
+							{:else if !message.done && !message.error && (hasResponseContent || !hasVisibleStatus)}
 								<div class="text-[0.9375rem] leading-relaxed">
 									<span
 										class="inline-block w-[0.125rem] h-3.5 bg-gray-400 dark:bg-gray-500 ml-0.5 animate-pulse align-text-bottom"

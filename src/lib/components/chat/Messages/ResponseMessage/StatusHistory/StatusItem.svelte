@@ -5,6 +5,7 @@
 	import Search from '$lib/components/icons/Search.svelte';
 	import { t } from 'i18next';
 
+	/** @type {any} */
 	export let status = null;
 	export let done = false;
 </script>

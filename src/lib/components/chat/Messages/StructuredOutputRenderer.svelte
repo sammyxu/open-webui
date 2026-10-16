@@ -179,7 +179,6 @@
 				attributes={detailToken.attributes}
 				resultContent={detailToken.text}
 				{allowEmbeds}
-				{hideProcessingDetails}
 				resolvable={!!chatId && !!messageId && save}
 				resolving={resolvingCallId === detailToken.attributes?.id}
 				onResolve={(approved) => resolveToolCall(detailToken.attributes?.id ?? '', approved)}

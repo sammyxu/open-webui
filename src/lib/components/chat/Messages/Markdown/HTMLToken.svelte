@@ -90,19 +90,17 @@
 		{@const match = token.text.match(/<status title="([^"]+)" done="(true|false)" ?\/?>/)}
 		{@const statusTitle = match && match[1]}
 		{@const statusDone = match && match[2] === 'true'}
-		{#if statusTitle}
-			{#if !($settings?.hideProcessingDetails ?? false)}
-				<div class="flex flex-col justify-center -space-y-0.5">
-					<div
-						class="{statusDone === false
-							? 'shimmer'
-							: ''} text-gray-500 dark:text-gray-500 line-clamp-1 text-wrap"
-					>
-						{statusTitle}
-					</div>
+		{#if statusTitle && !($settings?.hideProcessingDetails ?? false)}
+			<div class="flex flex-col justify-center -space-y-0.5">
+				<div
+					class="{statusDone === false
+						? 'shimmer'
+						: ''} text-gray-500 dark:text-gray-500 line-clamp-1 text-wrap"
+				>
+					{statusTitle}
 				</div>
-			{/if}
-		{:else}
+			</div>
+		{:else if !statusTitle}
 			{token.text}
 		{/if}
 	{:else if token.text.includes(`<file type="html"`)}

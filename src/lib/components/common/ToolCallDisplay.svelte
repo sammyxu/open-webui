@@ -36,7 +36,6 @@
 	export let open = false;
 	export let grouped = false;
 	export let allowEmbeds = false;
-	export let hideProcessingDetails = false;
 	export let className = '';
 	export let resolvable = false;
 	export let resolving = false;
@@ -143,6 +142,7 @@
 	$: isAskUser = attributes?.name === 'ask_user';
 	$: needsInput = isAskUser && attributes?.status === 'pending';
 	$: needsApproval = !isAskUser && attributes?.status === 'pending' && resolvable;
+	$: hideProcessingDetails = $settings?.hideProcessingDetails ?? false;
 	$: args =
 		open || needsApproval || needsInput || (Array.isArray(embeds) && embeds.length > 0)
 			? decode(attributes?.arguments ?? '')

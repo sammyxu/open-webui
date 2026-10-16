@@ -403,11 +403,14 @@ export function buildOutputDisplayItems(
 
 		if (item.type && GROUPABLE_OUTPUT_TYPES.has(item.type)) {
 			const token = buildDetailToken(item, index === output.length - 1, toolOutputByCallId);
-			if (token && !hideProcessingDetails) {
-				currentDetailTokens.push(token);
-			} else if (token?.attributes.type === 'tool_calls') {
-				// Ungrouped, so ToolCallDisplay shows only approvals, embeds and images
-				displayItems.push({ type: 'detail_single', id: `detail-${displayItems.length}`, token });
+			// Hiding processing details keeps only tool calls, ungrouped, so ToolCallDisplay
+			// can still show approvals, embeds and images
+			if (!token || (hideProcessingDetails && token.attributes.type !== 'tool_calls')) {
+				return;
+			}
+			currentDetailTokens.push(token);
+			if (hideProcessingDetails) {
+				flushDetails();
 			}
 			return;
 		}
@@ -446,6 +449,11 @@ export function getOutputText(output?: OutputItem[] | null): string {
 		.map(getMessageText)
 		.filter((text) => text.trim())
 		.join('\n');
+}
+
+// A tool call waiting on the user: an approval, or an ask_user answer
+export function hasPendingToolCall(output?: OutputItem[] | null): boolean {
+	return (output ?? []).some((item) => item?.type === 'function_call' && item.status === 'pending');
 }
 
 function appendDelta(current: unknown, delta: unknown): unknown {
